@@ -1,0 +1,42 @@
+TLS Version: TLS 1.3
+
+Cipher Suite: TLS_AES_256_GCM_SHA384
+
+Server Certificate:
+- Subject: CN=www.google.com
+- Issuer: CN=WE2, O=Google Trust Services
+- Public Key: id-ecPublicKey (256-bit)
+- Signature Algorithm: ecdsa-with-SHA256
+- Validity: NotBefore: Jul 7 2025 – NotAfter: Sep 29 2025
+
+Certificate Chain:
+1. CN=www.google.com (leaf)
+   - Signed by: CN=WE2, O=Google Trust Services
+   - SigAlg: ECDSA with SHA-256
+2. CN=WE2, O=Google Trust Services
+   - Signed by: CN=GTS Root R4, O=Google Trust Services LLC
+   - SigAlg: ECDSA with SHA-384
+3. CN=GTS Root R4
+   - Signed by: CN=GlobalSign Root CA, O=GlobalSign nv-sa
+   - SigAlg: RSA with SHA-256
+
+Peer Signature Type: ECDSA
+Peer Signing Digest: SHA256
+Server Temporary Key: X25519, 253 bits
+
+Handshake Statistics:
+- Bytes Read: 2805
+- Bytes Written: 541
+- Server public key: 256-bit EC
+- Compression: None
+- ALPN: None
+- Early data: Not sent
+- Session renegotiation: Forbidden (TLS 1.3)
+- Certificate Verification Result: OK (0)
+
+Security Summary:
+- Confidentiality: Ensured via AES-256 in GCM mode (authenticated encryption)
+- Integrity: Guaranteed through AEAD with SHA384
+- Authentication: Server certificate chain verified successfully up to a trusted root (GlobalSign Root CA)
+
+Connection successfully secured using TLS 1.3.

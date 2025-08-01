@@ -1,0 +1,3 @@
+Content-Type: text/plain
+
+This is an internal confidential company message.

@@ -1,0 +1,17 @@
+S/MIME Email Signature and Encryption Verification Summary
+
+    Alice composed a plain text message (original_message.txt).
+
+    She digitally signed the message using her private key (alice_private.key) to provide proof of authenticity and prevent repudiation.
+
+    Alice then encrypted the signed message using Bob's public certificate (bob_cert.pem), ensuring the message remains confidential during transmission.
+
+    Bob decrypted the message using his corresponding private key (bob_private.key).
+
+    To confirm the source and integrity, Bob verified the digital signature using Alice’s public certificate (alice_cert.pem).
+
+Outcome:
+
+    The successful signature verification proves that Alice was the true sender, and the message was not modified in transit.
+
+    The decrypted message exactly matches the original, validating both authenticity and integrity.
